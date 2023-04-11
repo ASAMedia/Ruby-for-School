@@ -56,6 +56,7 @@ function js(done) {
             'assets/js/lib/*.js',
             'assets/js/main.js',
             'assets/js/jquery.min.js',
+            'assets/js/cards.min.js',
             'assets/js/scripts.js'
         ], {sourcemaps: true}),
         concat('main.min.js'),

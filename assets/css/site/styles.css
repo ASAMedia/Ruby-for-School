@@ -314,8 +314,7 @@ body {
 }
 
 .content img {
-  width: 100%;
-  height: 100%;
+  width: auto;
   border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
