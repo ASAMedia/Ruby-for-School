@@ -1,0 +1,102 @@
+<nav>
+            <a class="tsc" href="https://www.schulportal-thueringen.de/thueringer_schulcloud/">
+                <img src="/content/images/schulcloud.svg" alt="TSC" />
+            </a>
+            <ul>
+                {{#foreach navigation}}
+                {{#has slug="aktuelles"}}
+                <li>
+                    <a {{^if current}}href="{{@site.url}}"{{/if}} class="{{#if current}} currentside{{/if}}">
+                        <img class="icon" src="/content/images/home-house.svg" alt="Home" height="100" />
+                        <p>{{label}}</p>
+                    </a>
+                </li>
+                {{/has}}
+                
+                {{#has slug="unsere-schule"}}
+                <li>
+                    <a class="{{#if current}} currentside{{/if}}">
+                        <img class="icon" src="/content/images/school.svg" alt="School" height="100" />
+                        <p>{{label}}</p>
+                    </a>
+                    {{/has}}
+                    
+                                {{#has slug="geschichte"}}
+                                <ul class="mega-dropdown">
+                        <li class="row">
+                            <ul class="mega-col">
+                                <li>
+                                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
+                                        class="{{#if current}} currentside{{/if}}">{{label}}</a>
+                                </li>
+                                {{/has}}
+                                {{#has slug="konzept"}}
+                                <li>
+                                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
+                                        class="{{#if current}} currentside{{/if}}">{{label}}</a>
+                                </li>
+                                {{/has}}
+                                {{#has slug="kollegium"}}
+                                <li>
+                                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
+                                        class="{{#if current}} currentside{{/if}}">{{label}}</a>
+                                </li>
+                                {{/has}}
+                                {{#has slug="unsere-klassen"}}
+                                <li>
+                                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
+                                        class="{{#if current}} currentside{{/if}}">{{label}}</a>
+                                </li>
+                                </ul>
+                                {{/has}}
+                            
+                            
+                                {{#has slug="schulerrat"}}
+                                <ul class="mega-col">
+                                <li>
+                                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
+                                        class="{{#if current}} currentside{{/if}}">{{label}}</a>
+                                </li>
+                                {{/has}}
+                                {{#has slug="hort"}}
+                                <li>
+                                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
+                                        class="{{#if current}} currentside{{/if}}">{{label}}</a>
+                                </li>
+                                {{/has}}
+                                {{#has slug="elternvertretung"}}
+                                <li>
+                                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
+                                        class="{{#if current}} currentside{{/if}}">{{label}}</a>
+                                </li>
+                                {{/has}}
+                                {{#has slug="schulforderverein"}}
+                                <li>
+                                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
+                                        class="{{#if current}} currentside{{/if}}">{{label}}</a>
+                                </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </li>
+                                {{/has}}
+                            
+                {{#has slug="elterninformationen"}}
+                <li>
+                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}} class="{{#if current}} currentside{{/if}}">
+                        <img class="icon" src="/content/images/family.svg" alt="Family" height="100" />
+                        <p>{{label}}</p>
+                    </a>
+                </li>
+                {{/has}}
+                {{#has slug="kontakt"}}
+                <li>
+                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}} class="{{#if current}} currentside{{/if}}">
+                        <img class="icon" src="/content/images/phone.svg" alt="Contact" height="100" />
+                        <p>{{label}}</p>
+                    </a>
+                </li>
+                {{/has}}
+                {{/foreach}}
+            </ul>
+        </nav>
