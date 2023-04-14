@@ -275,15 +275,15 @@ figure.kg-card.kg-gallery-card.kg-width-wide {
 .kg-bookmark-thumbnail {
  position:relative;
  flex-grow:1;
- min-width:33%
+ min-width:33%;
+ display: flex;
+ justify-content: center;
 }
 .kg-bookmark-thumbnail img {
  width:auto;
  height:100%;
  object-fit:cover;
  position:absolute;
- top:0;
- left:0;
  border-radius:0 2px 2px 0
 }
 .kg-button-card,
@@ -1247,7 +1247,7 @@ figure.kg-card.kg-gallery-card.kg-width-wide {
 }
 .kg-product-card a.kg-product-card-btn-accent {
  background-color:var(--ghost-accent-color);
- color:#fff
+ color:#000
 }
 .kg-video-player-container button{
     border: none;

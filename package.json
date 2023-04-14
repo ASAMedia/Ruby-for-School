@@ -1,16 +1,16 @@
 {
-    "name": "ruby",
-    "description": "A Ghost theme",
-    "version": "1.0.0",
+    "name": "ruby-for-school",
+    "description": "A Ghost theme based on Ruby made for schools",
+    "version": "1.5.0",
     "private": true,
     "engines": {
         "ghost": ">=5.0.0"
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Axel Schorcht",
+        "email": "info@axel-schorcht.de",
+        "url": "https://axel-schorcht.de"
     },
     "keywords": [
         "ghost",
@@ -40,21 +40,23 @@
                 "width": 2000
             }
         },
-        "card_assets": true,
+        "card_assets": {
+            "exclude": [
+              "audio",
+              "before-after",
+              "blockquote",
+              "bookmark",
+              "button",
+              "gallery",
+              "nft",
+              "product",
+              "toggle",
+              "video",
+              "header",
+              "file"
+            ]
+          },
         "custom": {
-            "navigation_layout": {
-                "type": "select",
-                "options": ["Logo on the left", "Logo in the middle", "Stacked"],
-                "default": "Logo in the middle"
-            },
-            "title_font": {
-                "type": "select",
-                "options": [
-                    "Modern sans-serif",
-                    "Elegant serif"
-                ],
-                "default": "Modern sans-serif"
-            },
             "body_font": {
                 "type": "select",
                 "options": [

@@ -113,6 +113,12 @@ nav li li a:hover{background:#e2f9ca;background:#FAFBFB}
   height: 100px;
   cursor: pointer;
   overflow: hidden;
+  display: flex;
+}
+.content .img-container img{
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 @supports (display: grid) {
     
@@ -454,12 +460,13 @@ body {
 .sticky-note img{
   padding-bottom: 15px;
   max-height: 188.333px;
+  min-width: 100%;
 }
 .note-container {
   justify-self: center;
   padding: 0 10px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .note-container a{
