@@ -9,7 +9,7 @@ input{border:none;padding:10px;border-radius:20px}
 .logo{float:left;padding:0px;max-width: 30%; display: flex;}
 .logo a{font-size:28px;display:inline-block;padding:0 0 0 10px;max-height: 95px;margin: auto;}
 .logo a:last-of-type{max-width: 70%;}
-.logo a img{max-height: inherit; width: 100%;}
+.logo a img{max-height: inherit; }
 .logo a:first-of-type img{padding: 3px;}
 nav{float:right;}
 nav>ul{float:left;position:relative}
