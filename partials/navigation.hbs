@@ -47,6 +47,12 @@
                                     <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
                                         class="{{#if current}} currentside{{/if}}">{{label}}</a>
                                 </li>
+                                {{/has}}
+                                {{#has slug="formulare"}}
+                                <li>
+                                    <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
+                                        class="{{#if current}} currentside{{/if}}">{{label}}</a>
+                                </li>
                                 </ul>
                                 {{/has}}
                             
@@ -75,7 +81,9 @@
                                     <a {{^if current}}href="{{url absolute=" true"}}"{{/if}}
                                         class="{{#if current}} currentside{{/if}}">{{label}}</a>
                                 </li>
+                                
                                 </ul>
+                               
                         </li>
                     </ul>
                 </li>
