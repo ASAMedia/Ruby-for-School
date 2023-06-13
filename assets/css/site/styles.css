@@ -486,6 +486,7 @@ body {
   transform: scale3d(1, 1, 1);
   transition: transform 0.5s;
   padding-top: 40px;
+  height: 90%;
 }
 .sticky-note:hover{
   transition: transform 0.5s;
