@@ -1,7 +1,7 @@
 function mobileNavClick(){
     $("nav").slideToggle();
     $('.menu-icon').toggleClass("active");
-}
+};
 var imgContent;
 function showImgContent(e) {
     for(var i = 0; i < imgContent.length; i++) {
@@ -30,7 +30,7 @@ function showImgContent(e) {
     document.addEventListener('mousemove', showImgContent);
     setTextAnimation(0.1,10,2,'ease-in-out','#b9b9b9',false);
   });
-    
+
     
 
 
