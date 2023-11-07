@@ -48,7 +48,9 @@
         </div>
         {{navigation}}
     </div>
-
+{{#is "home"}}
+        {{> "announcements-bar"}}
+        {{/is}}
     <div class="content" style="z-index: -1;">
         {{{body}}}
     </div>
